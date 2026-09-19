@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="900" viewBox="0 0 760 900">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#334155"/>
+    </marker>
+    <style>
+      .text { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; fill: #0f172a; text-anchor: middle; }
+      .box { fill: #e0f2fe; stroke: #0284c7; stroke-width: 3; rx: 16; }
+      .norm { fill: #f1f5f9; stroke: #64748b; stroke-width: 3; rx: 16; }
+      .arrow { fill: none; stroke: #334155; stroke-width: 3; marker-end: url(#arrow); }
+      .skip { fill: none; stroke: #f59e0b; stroke-width: 3; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="760" height="900" fill="#ffffff"/>
+  <text class="text" x="380" y="50" font-size="28" font-weight="700">Transformer Block</text>
+
+  <text class="text" x="380" y="105" font-size="24">输入 x</text>
+  <path class="arrow" d="M380 120 V165"/>
+
+  <rect class="box" x="235" y="170" width="290" height="95"/>
+  <text class="text" x="380" y="210" font-size="23" font-weight="600">多头自注意力</text>
+  <text class="text" x="380" y="240" font-size="18">Multi-Head Self-Attention</text>
+  <path class="arrow" d="M380 265 V330"/>
+
+  <rect class="norm" x="260" y="335" width="240" height="80"/>
+  <text class="text" x="380" y="385" font-size="23" font-weight="600">相加 + LayerNorm</text>
+  <path class="skip" d="M380 125 H120 V375 H255"/>
+  <text class="text" x="120" y="250" font-size="18" transform="rotate(-90 120 250)">残差连接</text>
+
+  <path class="arrow" d="M380 415 V490"/>
+  <rect class="box" x="260" y="495" width="240" height="90"/>
+  <text class="text" x="380" y="550" font-size="24" font-weight="600">MLP</text>
+  <path class="arrow" d="M380 585 V665"/>
+
+  <rect class="norm" x="260" y="670" width="240" height="80"/>
+  <text class="text" x="380" y="720" font-size="23" font-weight="600">相加 + LayerNorm</text>
+  <path class="skip" d="M380 445 H640 V710 H505"/>
+  <text class="text" x="640" y="580" font-size="18" transform="rotate(90 640 580)">残差连接</text>
+
+  <path class="arrow" d="M380 750 V820"/>
+  <text class="text" x="380" y="860" font-size="24">输出 y</text>
+</svg>

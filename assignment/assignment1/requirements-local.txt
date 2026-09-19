@@ -1,0 +1,12 @@
+# Local runtime for CS231n 2026 Assignment 1 (Windows / Python 3.12).
+# The assignment itself is NumPy-based; no GPU framework is required.
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.8.4
+imageio==2.34.1
+six==1.16.0
+future==1.0.0
+jupyter==1.0.0
+ipykernel==6.29.5
+nbconvert==7.16.6
+PyPDF2==3.0.1

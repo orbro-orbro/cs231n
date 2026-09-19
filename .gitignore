@@ -1,0 +1,31 @@
+# Local environments and editor settings
+.venv*/
+**/.venv/
+.jupyter-data/
+.vscode/
+
+# Python caches and generated native extensions
+**/__pycache__/
+**/.ipynb_checkpoints/
+*.py[cod]
+*.pyd
+*.obj
+*.lib
+*.exp
+**/build/
+
+# Downloaded datasets
+**/cs231n/datasets/cifar-10-batches-py/
+**/cs231n/datasets/coco_captioning/
+assignment/assignment3/data/
+**/cs231n/datasets/*.npz
+**/cs231n/datasets/*.pt
+
+# Model weights and experiment outputs
+assignment/assignment3/pretrained_model/
+assignment/assignment3/cs231n/exp/
+assignment/assignment1/cs231n/saved/*.npy
+
+# Operating-system metadata
+.DS_Store
+._*
